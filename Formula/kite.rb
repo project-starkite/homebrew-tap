@@ -11,7 +11,7 @@ class Kite < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/project-starkite/starkite/releases/download/v0.8.5/kite_0.8.5_darwin_amd64.tar.gz"
-      sha256 "6344d13e6128e15a50392acc722979cb87e07bed1f1016c35a2a86b23414571d"
+      sha256 "4566c6457fd9b85280b2eda1f81930d621c26a83428d70caa0b481f66961787c"
 
       define_method(:install) do
         bin.install "kite"
@@ -19,7 +19,7 @@ class Kite < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/project-starkite/starkite/releases/download/v0.8.5/kite_0.8.5_darwin_arm64.tar.gz"
-      sha256 "1ce6c378386e7edba90d9e7b611352116235ab35c3dcb17b9cdce400b13782f3"
+      sha256 "ce9a2177c6c7d59c998ffd755a7d56ba038f227a0142da7ad32c4b6d32ec80cf"
 
       define_method(:install) do
         bin.install "kite"
@@ -30,14 +30,14 @@ class Kite < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/project-starkite/starkite/releases/download/v0.8.5/kite_0.8.5_linux_amd64.tar.gz"
-      sha256 "44e27423e8f3c4ab1d9ddbd52b3ceb42b84ec3fe7b52f272b962fe18ff168850"
+      sha256 "5465beaa72b77c551d244063ec9f166ce7f1152188add059728025c3b42b4eca"
       define_method(:install) do
         bin.install "kite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/project-starkite/starkite/releases/download/v0.8.5/kite_0.8.5_linux_arm64.tar.gz"
-      sha256 "29e8929189abc37d9e18cbf0da18d99130136ccacf7926d2f00b19102e288049"
+      sha256 "0716677f4805c208a6f187c7f0dc1b392d1e6e7eb8c35384d9080c72bf8e1e72"
       define_method(:install) do
         bin.install "kite"
       end
