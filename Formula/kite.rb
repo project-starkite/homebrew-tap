@@ -5,21 +5,21 @@
 class Kite < Formula
   desc "Secure scripting runtime for operational and agentic automation with Starlark"
   homepage "https://starkite.dev"
-  version "0.11.1"
+  version "0.11.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/project-starkite/starkite/releases/download/v0.11.1/kite_0.11.1_darwin_amd64.tar.gz"
-      sha256 "4924d7a0f969dbdf8459e7ad63e960dccb3a081dd763ceea9c7f51b5963d342a"
+      url "https://github.com/project-starkite/starkite/releases/download/v0.11.2/kite_0.11.2_darwin_amd64.tar.gz"
+      sha256 "de55f1d62f0b38ac65adfec81cce7ce6671ced8226e0e6a8d82e6cd4a66cd1f5"
 
       define_method(:install) do
         bin.install "kite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/project-starkite/starkite/releases/download/v0.11.1/kite_0.11.1_darwin_arm64.tar.gz"
-      sha256 "94b06509a1ea4e97019d40dcc019e176426d44caf246995ccd1b91410010f6fe"
+      url "https://github.com/project-starkite/starkite/releases/download/v0.11.2/kite_0.11.2_darwin_arm64.tar.gz"
+      sha256 "278a1b488f21c4c43a28a65abd04e83db9d00be94b65113a8ada0701361cdf50"
 
       define_method(:install) do
         bin.install "kite"
@@ -29,15 +29,15 @@ class Kite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/project-starkite/starkite/releases/download/v0.11.1/kite_0.11.1_linux_amd64.tar.gz"
-      sha256 "9c0b6bfc8ab389282716cc773314055f7cad51b953d2d5f302b392318c398e6e"
+      url "https://github.com/project-starkite/starkite/releases/download/v0.11.2/kite_0.11.2_linux_amd64.tar.gz"
+      sha256 "83c9a793a600ca3b6f81d4b41257fdeb3ea09725e840d8f25c8760001cc963f6"
       define_method(:install) do
         bin.install "kite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/project-starkite/starkite/releases/download/v0.11.1/kite_0.11.1_linux_arm64.tar.gz"
-      sha256 "681beb9f02423ae4a3114d7d02d8bf3378144aa1fa85186f8f6175831877c574"
+      url "https://github.com/project-starkite/starkite/releases/download/v0.11.2/kite_0.11.2_linux_arm64.tar.gz"
+      sha256 "a70b5a627f3f5e16a2b32aee8677f25da445f5b95692d01060ccb608c03b3f1c"
       define_method(:install) do
         bin.install "kite"
       end
